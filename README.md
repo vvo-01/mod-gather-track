@@ -10,10 +10,7 @@ AzerothCore module that combines two features for gathering professions:
 
 ## Requirements
 
-- AzerothCore (WotLK 3.3.5a), either:
-  - `mod-playerbots/azerothcore-wotlk` (Playerbot fork) — works out of the box,
-  - `azerothcore/azerothcore-wotlk` (vanilla AC) — works via the bundled
-    `CMakeLists.txt` and `src/mod-gather-track_loader.cpp`.
+- AzerothCore WotLK 3.3.5a (`mod-playerbots/azerothcore-wotlk` fork).
 - Windows / Linux.
 
 ## Installation
