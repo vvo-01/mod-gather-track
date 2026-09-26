@@ -1,0 +1,54 @@
+##################################################
+# mod-gather-track configuration file            #
+##################################################
+#
+# This module provides two independent features:
+#
+#   1. Dual Tracking - allows tracking herbs and minerals simultaneously
+#      from a single tracking spell, provided the player has the
+#      corresponding profession.
+#
+#   2. Gathering Speed - overrides the cast time of gathering spells
+#      (Herbalism, Mining, Skinning) without editing client DBC files.
+#
+# Both features are enabled by default.
+#
+
+##################################################
+# Dual Tracking
+##################################################
+
+# Enable or disable dual tracking of herbs and minerals.
+# When enabled, Find Herbs will also reveal mineral nodes, and
+# Find Minerals will also reveal herb nodes. The secondary effect
+# is only active if the player has the corresponding profession.
+# Default: 1 (enabled)
+DualTracking.Enable = 1
+
+##################################################
+# Gathering Speed
+##################################################
+
+# Enable or disable the gathering speed override.
+# When enabled, the cast time of Herbalism, Mining, and Skinning
+# spells is overridden to the value selected below.
+# Default: 1 (enabled)
+GatheringSpeed.Enable = 1
+
+# SpellCastTimes index used for Herbalism and Mining spells.
+# The index refers to an entry in SpellCastTimes.dbc.
+# Standard AzerothCore values:
+#   1  = 0 ms    (instant)
+#   2  = 250 ms
+#   3  = 500 ms
+#   4  = 1000 ms
+#   16 = 1500 ms
+#   5  = 2000 ms
+# Default: 16 (1500 ms)
+GatheringSpeed.HerbalismMiningIndex = 16
+
+# SpellCastTimes index used for Skinning spells.
+# The index refers to an entry in SpellCastTimes.dbc.
+# See the reference above for standard values.
+# Default: 4 (1000 ms)
+GatheringSpeed.SkinningIndex = 4
