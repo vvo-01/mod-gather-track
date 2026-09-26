@@ -170,7 +170,7 @@ public:
 // =====================================================
 // REGISTRATION
 // =====================================================
-void Addmod_gather_trackScripts()
+void AddSC_mod_gather_track()
 {
     new mod_gather_track_world();
     new mod_gather_track_unit();
